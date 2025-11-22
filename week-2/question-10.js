@@ -14,14 +14,9 @@ Not leap year
 */
 
 function LeapYear(year) {
-  var leapOrNot;
-  if (year >= 400) {
-    if (year % 4 === 0 && year % 400 === 0) leapOrNot = "Leap year";
-    else leapOrNot = "Not leap year";
-  } else {
-    if ((year % 4 === 0) & (year % 100 != 0)) leapOrNot = "Leap year";
-    else leapOrNot = "Not leap year";
-  }
+  var leapOrNot = "Not leap year";
+  if (year % 4 === 0) leapOrNot = "Leap year";
+  if (year % 4 === 0 && year % 100 !== 0) leapOrNot = "Leap year";
   return leapOrNot;
 }
 
