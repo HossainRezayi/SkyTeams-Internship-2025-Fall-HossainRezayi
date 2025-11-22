@@ -9,42 +9,24 @@ Vow
 */
 
 function CheckCharacter(char) {
-  var format = `/^[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/`;
+  var special = `/^[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/`;
   var consonant = "BCDFGHJKLMNPQRSTVWXYZ";
   var vowel = "AEIOU";
   var digit = "0123456789";
 
-  var type;
+  var result = "";
+  if (IndividualChecker(special)) result = "Special Symbol";
+  if (IndividualChecker(consonant)) result = "Consonant";
+  if (IndividualChecker(vowel)) result = "Vowel";
+  if (IndividualChecker(digit)) result = "Digit";
 
-  for (let index = 0; index < format.length; index++) {
-    if (char === format[index]) {
-      type = "Special Symbol";
-      break;
-    }
-
-    if (index <= consonant.length) {
-      if (char.toUpperCase() === consonant[index]) {
-        type = "Consonant";
-        break;
-      }
-    }
-
-    if (index <= vowel.length) {
-      if (char.toUpperCase() === vowel[index]) {
-        type = "Vowel";
-        break;
-      }
-    }
-
-    if (index <= digit.length) {
-      if (char === digit[index]) {
-        type = "Digit";
-        break;
-      }
+  function IndividualChecker(type) {
+    for (let index = 0; index < type.length; index++) {
+      if (char.toUpperCase() === type[index]) return true;
     }
   }
 
-  return type;
+  return result;
 }
 
 module.exports = CheckCharacter;
