@@ -10,10 +10,9 @@ Output:
 
 function ReverseNumber(number) {
   var reverse = "";
-  for (let index = 0; index < number; index++) {
+  while (number > 0) {
     reverse += number % 10;
-    number = Math.round(number / 10);
-    if (number < 10) reverse += number;
+    number = Math.floor(number / 10);
   }
   return parseInt(reverse);
 }
