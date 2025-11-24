@@ -1,5 +1,5 @@
 /*
- 21. Sum of digits 
+ 3. Sum of digits 
 Description: Calculate the sum of all digits of a number. 
 Example: 
 Input: 

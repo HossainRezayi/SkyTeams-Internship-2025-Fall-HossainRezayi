@@ -1,5 +1,5 @@
 /*
-19. Reverse a number 
+2. Reverse a number 
 Description: Reverse the digits of an integer. 
 Example: 
 Input: 
