@@ -31,6 +31,15 @@ function Count(number) {
   return count;
 }
 
+function Digits(count, number) {
+  let arrayOfDigits = [count];
+  for (let i = 0; i < count; i++) {
+    arrayOfDigits[i] = number % 10;
+    number = Math.floor(number / 10);
+  }
+  return arrayOfDigits;
+}
+
 function isArmstrong(number) {
   let instead = number;
   let count = Count(number);
@@ -39,24 +48,6 @@ function isArmstrong(number) {
 
   for (let i = 0; i < digits.length; i++) {
     sumDigits += Multiply(digits[i], count);
-  }
-
-  // function Multiply(digits) {
-  //   let sum = 1;
-
-  //   for (let i = 0; i < count; i++) {
-  //     sum *= digits;
-  //   }
-  //   return sum;
-  // }
-
-  function Digits(count) {
-    let arrayOfDigits = [count];
-    for (let i = 0; i < count; i++) {
-      arrayOfDigits[i] = number % 10;
-      number = Math.floor(number / 10);
-    }
-    return arrayOfDigits;
   }
 
   return sumDigits === instead;

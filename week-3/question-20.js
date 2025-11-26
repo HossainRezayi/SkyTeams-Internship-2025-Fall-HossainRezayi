@@ -19,8 +19,8 @@ function BodyMassIndex(weight, height) {
   let result = "";
 
   if (bmi < 18.5) result = "Underweight";
-  else if (18.5 <= bmi < 25) result = "Normal weight";
-  else if (25 <= bmi < 30) result = "Overweight";
+  else if (bmi < 25) result = "Normal weight";
+  else if (bmi < 30) result = "Overweight";
   else if (bmi >= 30) result = "Obese";
   else result = "Out range";
 
