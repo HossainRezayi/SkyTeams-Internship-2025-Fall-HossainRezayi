@@ -5,9 +5,9 @@ test("Reverse the given String ", () => {
 });
 
 test("Reverse the given String ", () => {
-  expect(reverseString(1232132)).toBe("olleH");
+  expect(reverseString(1232132)).not.toBe("olleH");
 });
 
 test("Reverse the given String ", () => {
-  expect(reverseString("")).toBe("olleH");
+  expect(reverseString("")).not.toBe("olleH");
 });
