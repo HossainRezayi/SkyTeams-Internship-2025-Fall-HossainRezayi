@@ -1,25 +1,25 @@
-const CountVowel = require("./question-1");
+const countVowel = require("./question-1");
 
 test("Count vowels in a string ", () => {
-  expect(CountVowel("SkyTeams Internship")).toBe(5);
+  expect(countVowel("SkyTeams Internship")).toBe(5);
 });
 
 test("Count vowels in a string ", () => {
-  expect(CountVowel("GitHub")).toBe(2);
+  expect(countVowel("GitHub")).toBe(2);
 });
 
 test("Count vowels in a string ", () => {
-  expect(CountVowel("HossainRezayi")).toBe(6);
+  expect(countVowel("HossainRezayi")).toBe(6);
 });
 
 test("Count vowels in a string ", () => {
-  expect(CountVowel("Count vowels in a string ")).toBe(7);
+  expect(countVowel("Count vowels in a string ")).toBe(7);
 });
 
 test("Count vowels in a string ", () => {
-  expect(CountVowel("test")).toBe(1);
+  expect(countVowel("test")).toBe(1);
 });
 
 test("Count vowels in a string ", () => {
-  expect(CountVowel("A cat sat on a mat")).toBe(6);
+  expect(countVowel("A cat sat on a mat")).toBe(6);
 });

@@ -8,7 +8,7 @@ Output:
 6
 */
 
-function SumDigits(number) {
+function sumDigits(number) {
   var sum = 0;
   do {
     sum += number % 10;
@@ -18,4 +18,4 @@ function SumDigits(number) {
   return sum;
 }
 
-module.exports = SumDigits;
+module.exports = sumDigits;

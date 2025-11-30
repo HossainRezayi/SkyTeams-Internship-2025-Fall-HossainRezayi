@@ -8,7 +8,7 @@ Output:
 1
 */
 
-function SmallestElement(numbers) {
+function smallestElement(numbers) {
   var smallest = numbers[0];
   for (let index = 0; index < numbers.length; index++) {
     if (smallest > numbers[index]) smallest = numbers[index];
@@ -17,4 +17,4 @@ function SmallestElement(numbers) {
   return smallest;
 }
 
-module.exports = SmallestElement;
+module.exports = smallestElement;

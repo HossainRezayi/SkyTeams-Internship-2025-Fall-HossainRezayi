@@ -8,7 +8,7 @@ Output:
 4321
 */
 
-function ReverseNumber(number) {
+function reverseNumber(number) {
   var reverse = "";
   while (number > 0) {
     reverse += number % 10;
@@ -17,4 +17,4 @@ function ReverseNumber(number) {
   return parseInt(reverse);
 }
 
-module.exports = ReverseNumber;
+module.exports = reverseNumber;

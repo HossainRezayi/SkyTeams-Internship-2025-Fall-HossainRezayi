@@ -8,7 +8,7 @@ Output:
 Found 
 */
 
-function ArrayContainsElement(elements, element) {
+function arrayContainsElement(elements, element) {
   var result = "Not Found";
   for (let index = 0; index < elements.length; index++) {
     if (elements[index] === element) result = "Found";
@@ -16,4 +16,4 @@ function ArrayContainsElement(elements, element) {
   return result;
 }
 
-module.exports = ArrayContainsElement;
+module.exports = arrayContainsElement;

@@ -8,7 +8,7 @@ Output:
 1, 2, 3, 4, 6, 12 
 */
 
-function Factors(number) {
+function factors(number) {
   var factor = "";
   for (let index = 0; index <= number; index++) {
     if (number % index === 0) {
@@ -18,4 +18,4 @@ function Factors(number) {
   return factor;
 }
 
-module.exports = Factors;
+module.exports = factors;

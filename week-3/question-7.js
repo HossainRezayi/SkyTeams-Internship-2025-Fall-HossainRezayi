@@ -8,7 +8,7 @@ Output:
 15
 */
 
-function SumOfElement(numbers) {
+function sumOfElement(numbers) {
   var sum = 0;
   for (let index = 0; index < numbers.length; index++) {
     sum += numbers[index];
@@ -16,4 +16,4 @@ function SumOfElement(numbers) {
   return sum;
 }
 
-module.exports = SumOfElement;
+module.exports = sumOfElement;

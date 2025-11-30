@@ -8,17 +8,17 @@ Output:
 120 
 */
 
-function FactorialWithRecursion(num, sum = 1) {
+function factorialWithRecursion(num, sum = 1) {
   if (num === 0) return 1;
 
   sum *= num;
   num--;
 
   if (num > 0) {
-    return FactorialWithRecursion(num, sum);
+    return factorialWithRecursion(num, sum);
   }
 
   return sum;
 }
 
-module.exports = FactorialWithRecursion;
+module.exports = factorialWithRecursion;

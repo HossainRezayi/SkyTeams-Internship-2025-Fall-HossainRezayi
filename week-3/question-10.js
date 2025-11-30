@@ -11,7 +11,7 @@ Input:
 Output: 
 Not Prime 
 */
-function PrimeNumber(number) {
+function primeNumber(number) {
   var result = "Prime";
   for (let index = 2; index < number; index++) {
     if (number % index === 0) result = "Not Prime";
@@ -19,4 +19,4 @@ function PrimeNumber(number) {
   return result;
 }
 
-module.exports = PrimeNumber;
+module.exports = primeNumber;

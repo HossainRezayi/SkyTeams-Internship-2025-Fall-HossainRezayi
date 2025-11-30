@@ -13,7 +13,7 @@ Output:
 6 → 3 → 10 → 5 → 16 → 8 → 4 → 2 → 1 (Steps: 8) 
 */
 
-function CollatzSequence(n) {
+function collatzSequence(n) {
   let count = 0;
   while (n !== 1) {
     count++;
@@ -23,4 +23,4 @@ function CollatzSequence(n) {
   return count;
 }
 
-module.exports = CollatzSequence;
+module.exports = collatzSequence;

@@ -12,10 +12,10 @@ Output:
 Not Palindrome 
 */
 
-function Palindrome(number) {
+function palindrome(number) {
   var firstDigit = Math.floor(number / 100);
   var lastDigit = number % 10;
   return lastDigit === firstDigit ? "Palindrome" : "Not Palindrome";
 }
 
-module.exports = Palindrome;
+module.exports = palindrome;

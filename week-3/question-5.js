@@ -8,7 +8,7 @@ Output:
 9
 */
 
-function LargestElement(numbers) {
+function largestElement(numbers) {
   var largest = numbers[0];
   for (let index = 0; index < numbers.length; index++) {
     if (largest < numbers[index]) largest = numbers[index];
@@ -17,4 +17,4 @@ function LargestElement(numbers) {
   return largest;
 }
 
-module.exports = LargestElement;
+module.exports = largestElement;

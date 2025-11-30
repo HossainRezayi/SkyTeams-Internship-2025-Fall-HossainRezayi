@@ -8,7 +8,7 @@ Output:
 3 
 */
 
-function Occurrences(elements, element) {
+function occurrences(elements, element) {
   var count = 0;
   for (let index = 0; index < elements.length; index++) {
     if (elements[index] === element) count++;
@@ -16,4 +16,4 @@ function Occurrences(elements, element) {
   return count;
 }
 
-module.exports = Occurrences;
+module.exports = occurrences;

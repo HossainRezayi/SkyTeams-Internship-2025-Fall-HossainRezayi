@@ -1,7 +1,7 @@
-const Pyramid = require("./question-19");
+const pyramid = require("./question-19");
 
 test("Pattern Printing – Pyramid", () => {
-  expect(Pyramid(5)).toBe(
+  expect(pyramid(5)).toBe(
     `    *
    ***
   *****
@@ -11,16 +11,16 @@ test("Pattern Printing – Pyramid", () => {
 });
 
 test("Pattern Printing – Pyramid", () => {
-  expect(Pyramid(2)).toBe(
+  expect(pyramid(2)).toBe(
     ` *
 ***`
   );
 });
 
 test("Pattern Printing – Pyramid", () => {
-  expect(Pyramid(0)).toBe("");
+  expect(pyramid(0)).toBe("");
 });
 
 test("Pattern Printing – Pyramid", () => {
-  expect(Pyramid(-3)).toBe("");
+  expect(pyramid(-3)).toBe("");
 });

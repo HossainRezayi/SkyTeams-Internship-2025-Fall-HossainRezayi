@@ -8,7 +8,7 @@ Output:
 2, 3, 5, 7 
 */
 
-function PrimeUpToN(number) {
+function primeUpToN(number) {
   var primeNumbers = "2";
   for (let i = 3; i < number; i++) {
     var IsPrime = true;
@@ -20,4 +20,4 @@ function PrimeUpToN(number) {
   return primeNumbers;
 }
 
-module.exports = PrimeUpToN;
+module.exports = primeUpToN;

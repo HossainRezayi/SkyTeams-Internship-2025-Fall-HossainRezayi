@@ -11,7 +11,7 @@ Output:
 *********
 */
 
-function Pyramid(n) {
+function pyramid(n) {
   let result = "";
   let extraStar = 0;
 
@@ -31,4 +31,4 @@ function Pyramid(n) {
   return result;
 }
 
-module.exports = Pyramid;
+module.exports = pyramid;

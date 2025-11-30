@@ -8,7 +8,7 @@ Output:
 32 
 */
 
-function PowerOfNumber(number, power) {
+function powerOfNumber(number, power) {
   var result = 1;
   for (let index = 1; index <= power; index++) {
     result *= number;
@@ -16,4 +16,4 @@ function PowerOfNumber(number, power) {
   return result;
 }
 
-module.exports = PowerOfNumber;
+module.exports = powerOfNumber;

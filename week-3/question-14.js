@@ -8,7 +8,7 @@ Output:
 120 
 */
 
-function FindFactorial(number) {
+function findFactorial(number) {
   var factorial = 1;
   for (let index = 1; index <= number; index++) {
     factorial *= index;
@@ -16,4 +16,4 @@ function FindFactorial(number) {
   return factorial;
 }
 
-module.exports = FindFactorial;
+module.exports = findFactorial;

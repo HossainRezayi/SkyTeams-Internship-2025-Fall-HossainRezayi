@@ -14,7 +14,7 @@ Output:
 BMI = 22.86 (Normal weight) 
 */
 
-function BodyMassIndex(weight, height) {
+function bodyMassIndex(weight, height) {
   let bmi = weight / (height * height).toFixed(2);
   let result = "";
 
@@ -27,4 +27,4 @@ function BodyMassIndex(weight, height) {
   return result;
 }
 
-module.exports = BodyMassIndex;
+module.exports = bodyMassIndex;

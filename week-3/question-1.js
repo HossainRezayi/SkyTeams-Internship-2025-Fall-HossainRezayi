@@ -8,7 +8,7 @@ Output:
 6 
 */
 
-function CountVowel(str) {
+function countVowel(str) {
   var count = 0;
   var vowels = "aeiouAEIOU";
 
@@ -20,4 +20,4 @@ function CountVowel(str) {
   return count;
 }
 
-module.exports = CountVowel;
+module.exports = countVowel;

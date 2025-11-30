@@ -13,7 +13,7 @@ Output:
 Not Armstrong 
 */
 
-function Multiply(number, exponent) {
+function multiply(number, exponent) {
   let sum = 1;
 
   for (let i = 0; i < exponent; i++) {
@@ -22,7 +22,7 @@ function Multiply(number, exponent) {
   return sum;
 }
 
-function Count(number) {
+function count(number) {
   let count = 0;
   while (number > 0) {
     number = Math.floor(number / 10);
@@ -31,7 +31,7 @@ function Count(number) {
   return count;
 }
 
-function Digits(count, number) {
+function digitsCount(count, number) {
   let arrayOfDigits = [count];
   for (let i = 0; i < count; i++) {
     arrayOfDigits[i] = number % 10;
@@ -42,12 +42,12 @@ function Digits(count, number) {
 
 function isArmstrong(number) {
   let instead = number;
-  let count = Count(number);
-  let digits = Digits(count);
+  let count = count(number);
+  let digits = digitsCount(count);
   let sumDigits = 0;
 
   for (let i = 0; i < digits.length; i++) {
-    sumDigits += Multiply(digits[i], count);
+    sumDigits += multiply(digits[i], count);
   }
 
   return sumDigits === instead;

@@ -8,7 +8,7 @@ Output:
 0, 1, 1, 2, 3, 5, 8 
 */
 
-function FibonacciSerie(number) {
+function fibonacciSerie(number) {
   var series = [number];
   series[0] = 0;
   series[1] = 1;
@@ -20,4 +20,4 @@ function FibonacciSerie(number) {
   return series;
 }
 
-module.exports = FibonacciSerie;
+module.exports = fibonacciSerie;
