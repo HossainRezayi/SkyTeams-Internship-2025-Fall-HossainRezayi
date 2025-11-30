@@ -15,7 +15,6 @@ Not leap year
 
 function LeapYear(year) {
   var leapOrNot = "Not leap year";
-  if (year % 4 === 0) leapOrNot = "Leap year";
   if (year % 4 === 0 && year % 100 !== 0) leapOrNot = "Leap year";
   return leapOrNot;
 }

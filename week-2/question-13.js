@@ -9,70 +9,71 @@ February, 28 or 29 days
 */
 
 function MonthNameAndDays(month) {
-  var name, days;
+  let monthInLower = month.toLowerCase();
+  let name, days;
 
-  switch (month) {
+  switch (monthInLower) {
     case 1:
-      name = "JANUARY";
+      name = "january";
       days = "31 Days";
       break;
 
     case 2:
-      name = "FEBRUARY";
+      name = "february";
       days = "28 or 29 Days";
       break;
 
     case 3:
-      name = "MARCH";
+      name = "march";
       days = "31 Days";
       break;
 
     case 4:
-      name = "APRIL";
+      name = "april";
       days = "30 Days";
       break;
 
     case 5:
-      name = "MAY";
+      name = "may";
       days = "31 Days";
       break;
 
     case 6:
-      name = "JUNE";
+      name = "june";
       days = "30 Days";
       break;
 
     case 7:
-      name = "JULY";
+      name = "july";
       days = "31 Days";
       break;
 
     case 8:
-      name = "AUGUST";
+      name = "august";
       days = "31 Days";
       break;
 
     case 9:
-      name = "SEPTEMBER";
+      name = "september";
       days = "30 Days";
       break;
 
     case 10:
-      name = "OCTOBER";
+      name = "october";
       days = "31 Days";
       break;
 
     case 11:
-      name = "NOVEMBER";
+      name = "november";
       days = "30 Days";
       break;
 
     case 12:
-      name = "DECEMBER";
+      name = "december";
       days = "31 Days";
       break;
     default:
-      name = "Out Range";
+      name = "out Range";
       days = "-1";
   }
 

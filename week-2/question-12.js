@@ -9,15 +9,16 @@ Go
 */
 
 function TrafficLight(color) {
+  let colorInlowercase = color.toLowerCase();
   var action;
-  switch (color) {
-    case "Red":
+  switch (colorInlowercase) {
+    case "red":
       action = "Stop";
       break;
-    case "Yellow":
+    case "yellow":
       action = "Ready";
       break;
-    case "Green":
+    case "green":
       action = "Go";
       break;
   }
