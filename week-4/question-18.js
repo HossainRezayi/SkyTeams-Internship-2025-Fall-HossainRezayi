@@ -2,12 +2,11 @@
 18. Implement a Stack (Array-Based) 
 Operations: push, pop, peek, isEmpty.
 */
+let array = ["first"];
 
 function implementStack(operation, element = "") {
   operation = operation.toLowerCase();
-  let array = ["first"];
   let result = "";
-  let index = array.length - 1;
 
   switch (operation) {
     case "push":
@@ -16,11 +15,10 @@ function implementStack(operation, element = "") {
       break;
     case "pop":
       result = `last element was deleted successfully`;
-      array.slice(index);
+      array.pop(array.length - 1);
       break;
     case "peek":
-      array[index];
-      result = `${array[index]}`;
+      result = `${array[array.length - 1]}`;
       break;
     case "isempty":
       result = array.length === 0 ? true : false;
