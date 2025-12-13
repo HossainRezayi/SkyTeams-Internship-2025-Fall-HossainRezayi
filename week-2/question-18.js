@@ -10,13 +10,14 @@ Output:
 … 
 5 × 10 = 50
 */
-
 function MultiplicationTable(number, N) {
-  var multiplying = [N];
-  for (let index = 0; index < N; index++) {
-    multiplying[index] = (index + 1) * number;
+  let table = [];
+
+  for (let index = 1; index <= N; index++) {
+    table.push(`${number} × ${index} = ${number * index}`);
   }
-  return multiplying;
+
+  return table;
 }
 
 module.exports = MultiplicationTable;
