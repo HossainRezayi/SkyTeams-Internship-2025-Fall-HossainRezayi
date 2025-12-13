@@ -11,10 +11,11 @@ Valid triangle, Scalene
 */
 
 function TriangleValidityAndType(side1, side2, side3) {
-  var validity, type;
+  let validity;
+  let type;
   if (side1 + side2 > side3 && side3 + side2 > side1 && side1 + side3 > side2)
     validity = "Valid Triangle";
-  else validity = "Not Valid Triangle";
+  else return ["Not Valid Triangle", null];
 
   if (side1 === side2 && side1 === side3 && side2 === side3)
     type = "Equilateral";
