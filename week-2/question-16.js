@@ -7,9 +7,10 @@ Output:
 */
 
 function Print(start, end) {
-  var num = [100];
-  for (let index = start; index <= end; index++) {
-    num[index - 1] = index;
+  const length = end - start + 1;
+  var num = new Array(length);
+  for (let index = 0; index < length; index++) {
+    num[index] = start + index;
   }
   return num;
 }
