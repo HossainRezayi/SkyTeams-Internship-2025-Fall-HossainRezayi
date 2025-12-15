@@ -8,13 +8,9 @@ function frequencyCounter(str) {
   let frequency = {};
 
   for (let i = 0; i < str.length; i++) {
-    let count = 1;
-    if (str[i] in frequency) continue;
+    let char = str[i];
 
-    for (let j = i + 1; j < str.length; j++) {
-      if (str[i] === str[j]) count++;
-    }
-    frequency[`${str[i]}`] = count;
+    frequency[char] = (frequency[char] || 0) + 1;
   }
   return frequency;
 }

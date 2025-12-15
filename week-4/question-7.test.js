@@ -1,13 +1,13 @@
 const game = require("./question-7");
 
 test("Rock, Paper, Scissors Game ", () => {
-  expect(game()).toBe("rock");
+  expect(game("rock")).toBe();
 });
 
 test("Rock, Paper, Scissors Game ", () => {
-  expect(game()).toBe("paper");
+  expect(game("paper")).toBe();
 });
 
 test("Rock, Paper, Scissors Game ", () => {
-  expect(game().toBe("scissors"));
+  expect(game("scissors").toBe());
 });
