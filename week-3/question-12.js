@@ -13,9 +13,15 @@ Not Palindrome
 */
 
 function palindrome(number) {
-  var firstDigit = Math.floor(number / 100);
-  var lastDigit = number % 10;
-  return lastDigit === firstDigit ? "Palindrome" : "Not Palindrome";
+  let original = number;
+  let reversed = 0;
+
+  while (number > 0) {
+    reversed = reversed * 10 + (number % 10);
+    number = Math.floor(number / 10);
+  }
+
+  return reversed === original ? "Palindrome" : "Not Palindrome";
 }
 
 module.exports = palindrome;

@@ -13,9 +13,7 @@ Not Prime
 */
 function primeNumber(number) {
   var result = "Prime";
-  for (let index = 2; index < number; index++) {
-    if (number % index === 0) result = "Not Prime";
-  }
+  if (number % index === 0) result = "Not Prime";
   return result;
 }
 

@@ -13,9 +13,7 @@ function countVowel(str) {
   var vowels = "aeiouAEIOU";
 
   for (let i = 0; i < str.length; i++) {
-    for (let j = 0; j < vowels.length; j++) {
-      if (str[i] === vowels[j]) count++;
-    }
+    if (vowels.includes(str[i])) count++;
   }
   return count;
 }
