@@ -6,19 +6,22 @@ Example:
 */
 
 function isRotation(str1, str2) {
-  let result = true;
-  let i = 0;
-  let j = str2.length - 1;
-  str1 = str1.toLowerCase();
-  str2 = str2.toLowerCase();
+  if (str1.length !== str2.length) return false;
 
-  while (i < str1.length && j < 0) {
-    if (str1[i] !== str2[j]) result = false;
-    i++;
-    j--;
+  let n = str1.length;
+
+  for (let i = 0; i < n; i++) {
+    let result = true;
+    for (let j = 0; j < n; j++) {
+      if (str1[(i + j) % n] !== str2[j]) {
+        result = false;
+        break;
+      }
+    }
+    if (result) return true;
   }
 
-  return result;
+  return false;
 }
 
 module.exports = isRotation;
