@@ -4,29 +4,25 @@ Input: "{[()]}" → Output: Balanced
 */
 
 function balancedParentheses(str) {
-  let i = 0;
-  let strLength = str.length;
-  let round = "()";
-  let square = "[]";
-  let curly = "{}";
-  let result = false;
+  const stack = [];
+  const pairs = {
+    ")": "(",
+    "]": "[",
+    "}": "{",
+  };
 
-  while (i < str.length) {
-    switch (str[i]) {
-      case "(":
-        result = str[i] + str[strLength - ++i] === round;
-        break;
-      case "[":
-        result = str[i] + str[strLength - ++i] === square;
-        break;
-      case "{":
-        result = str[i] + str[strLength - ++i] === curly;
-        break;
-      default:
-        return result;
+  for (let char of str) {
+    if (char === "(" || char === "[" || char === "{") {
+      stack.push(char);
+    } else if (char === ")" || char === "]" || char === "}") {
+      if (stack.length === 0) return "Not Balanced";
+
+      const top = stack.pop();
+      if (top !== pairs[char]) return "Not Balanced";
     }
   }
-  return result;
+
+  return stack.length === 0 ? "Balanced" : "Not Balanced";
 }
 
 module.exports = balancedParentheses;
