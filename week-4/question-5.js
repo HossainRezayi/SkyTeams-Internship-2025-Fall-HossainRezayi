@@ -7,14 +7,23 @@ Output: [2, 4, 6, 1, 3, 5]
 */
 
 function rearrangeArray(numbers) {
-  let newArray = [];
+  let index = 0;
+
   for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] % 2 === 0) newArray.push(numbers[i]);
+    if (numbers[i] % 2 === 0) {
+      numbers[index] = numbers[i];
+      index++;
+    }
   }
+
   for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] % 2 !== 0) newArray.push(numbers[i]);
+    if (numbers[i] % 2 !== 0) {
+      numbers[index] = numbers[i];
+      index++;
+    }
   }
-  return newArray;
+
+  return numbers;
 }
 
 module.exports = rearrangeArray;

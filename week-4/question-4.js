@@ -7,13 +7,9 @@ Output: [3, 4]
 */
 
 function intersection(array1, array2) {
-  let newArray = [];
-  for (let i = 0; i < array1.length; i++) {
-    for (let j = 0; j < array2.length; j++) {
-      if (array1[i] === array2[j]) newArray.push(array1[i]);
-    }
-  }
-  return newArray;
+  return array1
+    .map((item) => (array2.includes(item) ? item : null))
+    .filter((item) => item !== null);
 }
 
 module.exports = intersection;
